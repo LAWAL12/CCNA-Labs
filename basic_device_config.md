@@ -10,7 +10,7 @@ Configure basic device settings for a router, switch, and PC.
 
 ## Configurations
 ### Router (R1)
-``
+```
 R1#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
 R1(config)#hostname R1
