@@ -10,7 +10,7 @@ Configure basic device settings for a router, switch, and PC.
 
 ## Configurations
 ### Router (R1)
-``
+```
 R1#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
 R1(config)#hostname R1
@@ -33,9 +33,9 @@ R1(config-if)#
 *Feb  9 20:14:34.259: %LINK-3-UPDOWN: Interface GigabitEthernet2/0, changed sta>
 *Feb  9 20:14:35.259: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEt>
 R1(config-if)#ex
-
-## Configurations
+```
 ### SWITCH (SW1)
+```
 Switch#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
 Switch(config)#hostname SW1
@@ -59,17 +59,18 @@ SW1(config-if)#exit
 *Feb  9 20:19:39.297: %LINK-3-UPDOWN: Interface Vlan1, changed state to up
 *Feb  9 20:19:40.297: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, ch>
 SW1(config-if)#exit
-
-## Configuration
+```
 ### VPC
+```
 PC1> 
 PC1> ip 192.168.1.3 255.255.255.0 
 Checking for duplicate address...
 PC1 : 192.168.1.3 255.255.255.0
-
+```
 ## Verification
 ### Ping Results :
-  > From PC to Router: Success 
+  > From PC to Router: Success
+``` 
 PC1> ping 192.168.1.1
 
 84 bytes from 192.168.1.1 icmp_seq=1 ttl=255 time=39.277 ms
@@ -77,7 +78,9 @@ PC1> ping 192.168.1.1
 84 bytes from 192.168.1.1 icmp_seq=3 ttl=255 time=6.557 ms
 84 bytes from 192.168.1.1 icmp_seq=4 ttl=255 time=7.010 ms
 84 bytes from 192.168.1.1 icmp_seq=5 ttl=255 time=6.392 ms
+```
 > From PC to Switch: Success
+```
 
 PC1> ping 192.168.1.2
 
