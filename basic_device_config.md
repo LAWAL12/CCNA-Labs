@@ -34,6 +34,7 @@ R1(config-if)#
 *Feb  9 20:14:35.259: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2/0, changed state to up
 R1(config-if)#ex
 
+```
 ## Configurations ##
 ### SWITCH (SW1)
 Switch#conf t
