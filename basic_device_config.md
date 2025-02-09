@@ -10,7 +10,7 @@ Configure basic device settings for a router, switch, and PC.
 
 ## Configurations
 ### Router (R1)
-```bash
+``
 R1#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
 R1(config)#hostname R1
@@ -62,6 +62,7 @@ SW1(config-if)#exit
 
 ## Configuration ##
 ### VPC
+``
 PC1> 
 PC1> ip 192.168.1.3 255.255.255.0 
 Checking for duplicate address...
@@ -69,7 +70,8 @@ PC1 : 192.168.1.3 255.255.255.0
 
 ## Verification
 ###### Ping Results :
-  > From PC to Router: Success 
+  > From PC to Router: Success
+`` 
 PC1> ping 192.168.1.1
 
 84 bytes from 192.168.1.1 icmp_seq=1 ttl=255 time=39.277 ms
